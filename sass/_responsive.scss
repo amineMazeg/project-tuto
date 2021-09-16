@@ -16,10 +16,54 @@
             padding-right:1.5rem;
         }
 
-        &_link{
+        .menu-link{
             font-size:1.5rem;
+        }
+       }
+     }
+
+    .about_bio{
+        font-size:1.5rem;
+    }
+
+
+    .projects{
+        &_bio-img{
+            height:40vh;
+        }
+
+        .projects_items{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary{
+            font-size: 3rem;
         }
 
     }
+   
+    
+.contact_list{
+    grid-template-columns: repeat(2,1fr);
+}
+
+}
+
+@include media-lg{
+    .projects{
+      
+
+        .projects_items{
+            grid-template-columns: repeat(3, 1fr);
+        } 
+    }
+
+    .contact_list{
+        grid-template-columns: repeat(3,1fr);
+    }  
+}
+
+@include media-xl{
+    .projects_bio-img{
+        height:50vh;
     }
 }
